@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+.education {
+  background: #e5ecfb;
+  min-height: 80vh;
+}
+
+.education .qoute {
+  font-size: 1.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  margin-top: .5rem;
+}
+
+.education .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.education .box-container .box {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border-radius: .5rem;
+  box-shadow: .2rem .5rem 1rem rgba(0, 0, 0, .2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: .3s;
+  background: rgb(252, 252, 252);
+}
+
+.education .box-container .box:hover {
+  transform: scale(1.03);
+  box-shadow: 1rem .5rem 1.2rem rgba(0, 0, 0, .3);
+}
+
+.education .box-container .box .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+
+.education .box-container .box img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.education .box-container .box .content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 70rem;
+}
+
+.education .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: #012970;
+  padding: .5rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.education .box-container .box .content p {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.education h4 {
+  font-size: 2rem;
+  color: rgb(34, 109, 0);
+  text-align: left;
+  margin: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+/* mobail view */
+@media screen and (max-width: 600px) {
+  .education .box-container .box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .education .box-container .box .image {
+    width: 100%;
+    height: 25rem;
+  }
+
+  .education .box-container .box img {
+    width: 100%;
+  }
+
+  .education .box-container .box .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex: 0;
+  }
+
+  .education .btns {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-wrap: wrap;
+  }
+}

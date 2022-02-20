@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+
+/* introduction section */
+.home {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home .content {
+  flex: 1 1 40rem;
+  padding-top: 1rem;
+  z-index: 1;
+}
+
+.home .image {
+  flex: 1 1 40rem;
+  z-index: 1;
+}
+
+.home .image img {
+  width: 70%;
+  margin-left: 6rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.home .image img:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #002057;
+}
+
+.home .content h3 span {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #ff7b00;
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home .content p span {
+  font-size: 2.5rem;
+  color: rgb(148, 8, 8);
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+.home .btn {
+  margin-top: 1rem;
+  position: absolute;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 4em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 18px rgba(48, 68, 247, .6);
+  font-family: 'Nunito', sans-serif;
+}
+
+.home .btn span {
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.home .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+.home .btn:hover {
+  background: #1a047e;
+}
+
+.home .btn:hover i {
+  transform: translateX(5px);
+}
+
+
+
+/* social icons */
+.socials {
+  position: relative;
+  margin-top: 9rem;
+}
+
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none
+}
+
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px
+}
+
+.social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear
+}
+
+.social-icons a:active, .social-icons a:focus, .social-icons a:hover {
+  color: #fff;
+  background-color: #0685da
+}
+
+.social-icons a.github:hover {
+  background-color: #0e0e0e
+}
+
+.social-icons a.twitter:hover {
+  background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+  background-color: #0d5b80
+}
+
+.social-icons a.whatsapp:hover {
+  background-color: #25D366
+}
+
+.social-icons a.instagram:hover {
+  background-color: #E1306C
+}
+
+.social-icons a.mail:hover {
+  background-color: #DB4437
+}
+
+
+/* Mobail view */
+@media(max-width:450px) {
+  .home .btn {
+    margin: 4rem 0;
+  }
+
+  .socials {
+    margin-top: 12rem;
+  }
+
+  .home .image img {
+    margin-top: -12rem;
+  }
+
+  .home .content p {
+    font-size: 2.2rem;
+  }
+
+  .home .content p span {
+    font-size: 2.2rem;
+  }
+}
