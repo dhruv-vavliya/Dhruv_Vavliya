@@ -87,19 +87,19 @@ document.onkeydown = function (e) {
 
 // Tawk.to chat api
 fetch('./env.json')
-.then(res => res.json())
-.then(env => {
+    .then(res => res.json())
+    .then(env => {
 
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = env.TawkAPI;
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-})
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = env.TawkAPI;
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    })
 
 
 
@@ -118,13 +118,13 @@ const phoneT = document.getElementById('phoneT');
 const msgT = document.getElementById('msgT');
 
 const contactBtn = document.getElementById('contactme');
-const activator = ()=>{
-    if( nameE.value.length >= 3 && mailReg.test(emailE.value) && messageE.value.length >= 5 ){
+const activator = () => {
+    if (nameE.value.length >= 3 && mailReg.test(emailE.value) && messageE.value.length >= 5) {
         contactBtn.disabled = false;
         contactBtn.style.background = "#2506ad";
         contactBtn.style.color = "#fff";
         document.querySelector(".button-area i").style.color = "#fff";
-    }else{
+    } else {
         contactBtn.disabled = true;
         contactBtn.style.background = "#dddddd";
         contactBtn.style.color = "black";
@@ -205,7 +205,7 @@ contactBtn.addEventListener('click', (e) => {
                         mailT.style.display = "none";
                         phoneT.style.display = "none";
                         msgT.style.display = "none";
-                    }else {
+                    } else {
                         alert(`:( Unfortunately, Mail didn't send.\nPlease try to contact via another way.`);
                     }
                 })
