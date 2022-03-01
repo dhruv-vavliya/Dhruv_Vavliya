@@ -42,7 +42,7 @@ $(document).ready(function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Tech Enthusiast", "Web Developer", "Coder", "Quick Learner"],
+    strings: ["Tech Enthusiast.", "Web Developer.", "Coder.", "Quick Learner."],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
